@@ -1,0 +1,468 @@
+1.	How to Install Git on Ubuntu machine?
+
+RHEL: sudo dnf install git-all
+Ubunut: sudo apt install git-all
+
+On windows:
+We can install using the Git Wizard
+
+Source
+https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+---------------------------------------------------------
+2.	Check the version of Git installed?
+git --version
+
+---------------------------------------------------------
+3.	How to save the credentials?
+
+git config --global user.name ""
+git config --global user.email ""
+
+How to check the credentials?
+git config --list
+
+How to check the list of settings or options in the config part of git?
+git config --help
+
+What are the usefull git config options/parameters?
+alias
+git config --global alias.ci commit | ci is the alias created for commit
+
+
+---------------------------------------------------------
+4.	Create a directory in ubuntu, delete it, rename, move, copy?
+
+Create: 
+mkdir DevOps
+
+Create multiple directories
+mkdir DevOps DevOps1 DevOps2
+
+Delete: 
+rm -r DevOps 
+
+With write protected files:
+rm -rf DevOps
+
+Remove multiple directories
+rm -rf DevOps DevOps1 DevOps2
+https://linuxize.com/post/remove-directory-linux/
+
+Rename: 
+mv Devops Devops1
+
+Move: 
+mv /home/testuser/Devops/Folder1 /home/testuser/Devops/Folder2
+
+Copy: 
+cp -R /home/testuser/Devops/Folder1 /home/testuser/Devops/Folder2
+
+---------------------------------------------------------
+5.	Create a file in ubuntu, delete it, rename, move, copy, edit?
+
+Create: 
+touch File1
+touch File1 File2 File3
+
+Delete: 
+rm File1
+rm File1 File2 File3
+
+Edit:
+cat >File1.txt
+
+View:
+cat File1.txt
+
+Rename:
+mv File1.txt File2.txt
+
+Copy:
+cp /home/testuser/Devops/Folder1/File2.txt /home/testuser/Devops/Folder2
+
+---------------------------------------------------------
+6.	Components of Git?
+
+
+---------------------------------------------------------
+7.	How to initiate Git in any directory?
+git init 
+
+---------------------------------------------------------
+8.	How to check the status? 
+git status
+
+---------------------------------------------------------
+9.	How to commit the changes? 
+git commit -m "First Commit" 
+
+How to check the list of files under each commit?
+git show <CommitID>
+
+What is HEAD?
+Its the position of the recent commit occured in any branch.
+
+What is detached from HEAD? 
+WHenever a swithc is required between the braches, the HEAD should be detached from one location to the other to consider as a latest code from that commit.
+
+---------------------------------------------------------
+9.	How to check if the Git is already initiated in the directory?
+git status
+
+We can check for the .git files by running
+ls -la
+---------------------------------------------------------
+10.	How to check the recent N number of commits?
+git log --oneline -N
+
+---------------------------------------------------------
+11.	How to push the changes from workspace to staging area?
+git add .
+
+
+---------------------------------------------------------
+12.	How to commit from staging to local repository?
+git commit -m "Comment" FileName
+
+---------------------------------------------------------
+13.	How to verify whether the changes are committed in the local repository?
+git log -a 
+git log --oneline
+
+
+---------------------------------------------------------
+14.	How to revert-back from local repository to staging area?
+git revert --soft <second recent commitID>
+
+
+---------------------------------------------------------
+15.	How to revert-back from staging area to workspace?
+git revert --mixed <File Name>
+
+---------------------------------------------------------
+15.	How to revert-back from local repository to workspace?
+git revert --mixed <second recent commitID>
+
+---------------------------------------------------------
+16.	How to create a branch in Git? 
+git branch <branch name>
+
+
+---------------------------------------------------------
+17.	How to switch the branch?
+git checkout 
+
+
+---------------------------------------------------------
+18.	How to commit the changes into specific branch? 
+checkout to branch and commit. 
+
+---------------------------------------------------------
+19.	How to track the commits in multiple branches?
+
+
+---------------------------------------------------------
+20.	How to give permissions for the branches?
+
+
+---------------------------------------------------------
+21.	How to remove the specific commits from any branch?
+We can revert any specific commit, but all the commits after that will be flushed.
+
+---------------------------------------------------------
+22.	How to identify the list of commits from specific users?
+git logs --author = <author name> 
+
+---------------------------------------------------------
+23.	How to merge the code from multiple branches to the master?
+git merge <branch name>
+
+
+---------------------------------------------------------
+24.	How to delete the branch?
+git branch -d <branch name>
+
+---------------------------------------------------------
+25.	How to recover the deleted branch? And what will be recovered?
+
+
+---------------------------------------------------------
+26.	What is conflict and its types?
+Conflicts: Changes occured on a single file on different branches. 
+
+
+---------------------------------------------------------
+27.	How to avoid conflicts?
+* Editing the file manually by checking the code from mutliple brnaches/source. And save & commit and this should avoid conflicts.
+* Abort - If the git got stuck while merging, then we can consider that as a abort.
+
+Conflicts will happen onlt if the file managment is not taken care well in the project.
+
+---------------------------------------------------------
+28.	How to track and fix the conflicts?
+
+
+---------------------------------------------------------
+30.	How to check the graph of the commits?
+using the GUI tools like gitk or sourcetree
+
+
+---------------------------------------------------------
+31.	What is broken commit and how to fix it?
+
+
+---------------------------------------------------------
+32.	What is tag in git?
+Label for the commits. 
+
+
+---------------------------------------------------------
+33.	What is show in git?
+It shows commit details 
+
+
+---------------------------------------------------------
+34.	How to push the commits to the GitHub repository?
+git push <repo address>
+
+---------------------------------------------------------
+35.	How to pull the files from GitHub repository?
+git pull <repo address>
+
+---------------------------------------------------------
+36.	How to check the files with logs before pulling from GitHub repository?
+
+
+---------------------------------------------------------
+37.	Difference between Git pull and Git fetch? 
+Pull = fetch + merge 
+Fetch = pulls data into tempor branch
+
+---------------------------------------------------------
+38.	Git stash?
+Temporary storage of files in staging area.
+
+---------------------------------------------------------
+39.	Git stash apply?
+Copy and Paste from stash to staging area.
+
+
+---------------------------------------------------------
+40.	git stash drop?
+Empyting the stash area
+
+---------------------------------------------------------
+41.	Difference between Git diff and Git Status? 
+Status -> Shows the current location of the files.
+Diff -> Diff between two files or branches
+
+---------------------------------------------------------
+42.	Difference between Git remote and Git clone? 
+Remote: To create a alias for the github repository.
+
+Clone: Pulling/building bridge bewteen local repo and git hub repo.
+
+
+---------------------------------------------------------
+43.	How to find the list of files which are changes in any commit?
+show
+
+---------------------------------------------------------
+44.	What is function of git config?
+configuration settings for the git. 
+metadata, config info, settings.
+
+---------------------------------------------------------
+45.	Branching strategies?
+Fast forward
+Recursive
+Cherry Pick
+
+---------------------------------------------------------
+46.	Advantages of forking workflow?
+
+
+---------------------------------------------------------
+47.	How to check if a branch is already merge into the master?
+git branch -merged
+
+
+---------------------------------------------------------
+48.	How would you return a commit that has just been pushed and made open?
+
+
+
+---------------------------------------------------------
+49.	How to remove a file from git without removing it from your file system?
+git rm 
+
+We can place the files in stash or we can also use git ignore.
+
+
+---------------------------------------------------------
+50.	Explain the Gitflow workflow?
+
+
+---------------------------------------------------------
+51.	Difference between HEAD, working tree and index, in Git?
+
+
+
+---------------------------------------------------------
+52.	What is Git fork? What is the difference between fork, branch, and clone? -- Important
+
+
+---------------------------------------------------------
+53.	What is different ways you can refer to a commit?
+git log
+git show
+
+---------------------------------------------------------
+54.	Difference between rebasing and merge in Git?
+
+Rebasing -> Merge will happend from the HEAD point.
+merge -> merge based on the timestamp of the commits.
+
+---------------------------------------------------------
+55.	Difference between reverting and resetting?
+
+Reverting -> 
+Resetting -> Soft, mixed and hard
+
+---------------------------------------------------------
+56.	cherry-pick?
+
+
+---------------------------------------------------------
+57.	How do you squash the last N commits into a single commit?
+
+
+
+---------------------------------------------------------
+58.	What is Git bisect? How can you use it to determine the source of a (regression) bug?
+
+
+
+---------------------------------------------------------
+59.	How do you configure a Git repository to run code sanity checking tools right before making commits, and preventing them if the test fails?
+
+
+---------------------------------------------------------
+60.	What is reflog, how to use it and when to use it?
+It give more inof about the commits 
+
+
+---------------------------------------------------------
+
+After cloning initiation and creation of alias called origin(don't have to specify the path while pull/push if we use origin key word in the code) will be done automatically by Git.
+
+
+Reset -> git reset --soft <commitID of previous/parent commitID>
+From Staging to Workspace: git reset or git reset <FileName>
+From Local to Workspace: git reset --mixed 75e0e21
+To remove the commits before any commit and also physical files : git reset --hard 75e0e21 
+(git reset --> soft, mixed, hard)
+
+---------------------------------------------------------
+Branch: 
+
+Pull = Fetch + Merge
+After Fetch, a temporary branch will be created in the local machine.
+More about the Temporary merging
+
+Merge: 
+Fast forward:
+* If I don;t do any updates on the master and them merge will perform Fast-forward.
+* Without any changes in the main branch, an merge will be fast forward.
+
+Recursive or Three-way:
+* If any changes in the main branch and tried to merge with other branch, it will perform Recursive.
+
+Cherry-Pick:
+
+
+Rebase: 
+* Need of merging the brnaches from the tip or HEAD of main branch.
+
+
+Tag: 
+
+Stash:
+
+Ignore:
+
+Config settings: 
+
+Amend: 
+
+Sub module:
+
+Conflicts: 
+
+---===============================================
+* Tried to pull the code from GitLab repository and Pushed into GitHub Repository.
+* Made some changes and pushed to the GitHub.
+* Created multiple branches and switched the branches from master to Dev
+* Made some changes and Pushed the changes to GitHub | This has created a branch on the Hub and also the further analysis and suggestions were 	provided in the Hub to merge the changes with the master branch.
+* Switched the brach again in local deom Dev to master | Verified the changes made in Dev and there was no changes displaying.
+* Pulled the changes from hub to master by pointing the branch master in the GitHub.
+* Checked for the recent changes and verfied.
+
+-------
+* When Development team pushes the changes to the branch, this will be validated and pushed by the lead or admin to the master.
+* Developer can see the changes pushed to the master only after pulling again from the master.
+-> How to check if the changes made has pushed to the master or not.
+-> Compare the changes between Dev and master based on the commits pushed by the Developer-1.
+* List of out the changes which are not pushed.
+
+-----===============================================
+Assessment: 
+
+* Switch to Dev brach and pull the code from master. -- Done
+* Check for the recent commit and details of it. -- 2417a0c
+* Make the change in the Dev-local and push it to the Dev-hub. -- Done
+* Perform another change and push the commit to Dev-hub -- Done
+* Merge and commit only second change from Dev to master in the hub. 
+* Before pulling the code from master hub branch, compare the difference between master and Dev branch in Hub from local.
+
+Answer/Solution: Cherry-pick
+
+git checkout master
+git cherry-pick <commit-ID>
+git status
+git log --oneline
+vi README.md
+git push <nttps://>
+
+-----===============================================
+Assessment: 
+
+* How to identify the difference between branches.
+	-> Missing commits git log master..Dev
+	-> Data mismatch git diff master...Dev
+
+-----===============================================
+Assessment: 
+
+* How to check the graph of the commits between branches in Git?
+
+
+-----===============================================
+Assessment: 
+
+* How to make all the commits in a single line?
+
+
+-----===============================================
+
+git branch --contains Dev
+
+
+
+
+
+
+
+
+

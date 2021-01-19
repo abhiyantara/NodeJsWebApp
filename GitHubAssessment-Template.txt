@@ -1,0 +1,254 @@
+1.	How to Install Git on Ubuntu machine?
+
+
+---------------------------------------------------------
+2.	Check the version of Git installed?
+
+---------------------------------------------------------
+3.	How to save the credentials?
+
+How to check the credentials? 
+
+How to check the list of settings or options in the config part of git?
+
+What are the usefull git config options/parameters?
+
+
+---------------------------------------------------------
+4.	Create a directory in ubuntu, delete it, rename, move, copy?
+
+---------------------------------------------------------
+5.	Create a file in ubuntu, delete it, rename, move, copy, edit?
+
+
+---------------------------------------------------------
+6.	Components of Git?
+
+---------------------------------------------------------
+7.	How to initiate Git in any directory? 
+
+---------------------------------------------------------
+8.	How to check the status? 
+
+
+---------------------------------------------------------
+9.	How to check if the Git is already initiated in the directory?
+
+
+---------------------------------------------------------
+10.	How to check the recent commits?
+
+
+---------------------------------------------------------
+11.	How to push the changes from local to staging area?
+
+
+---------------------------------------------------------
+12.	How to push the commit from staging to local repository?
+
+
+---------------------------------------------------------
+13.	How to verify whether the changes are committed in the local repository?
+
+
+---------------------------------------------------------
+14.	How to revert-back from local repository to staging area?
+
+
+---------------------------------------------------------
+15.	How to revert-back from staging area to local area?
+
+
+---------------------------------------------------------
+16.	How to create a branch in Git? 
+
+
+---------------------------------------------------------
+17.	How to switch the branch?
+
+
+---------------------------------------------------------
+18.	How to commit the changes into specific branch? 
+
+
+---------------------------------------------------------
+19.	How to track the commits in multiple branches?
+
+
+---------------------------------------------------------
+20.	How to give permissions for the branches?
+
+
+---------------------------------------------------------
+21.	How to remove the specific commits from any branch?
+
+
+---------------------------------------------------------
+22.	How to identify the list of commits from specific users? 
+
+
+---------------------------------------------------------
+23.	How to merge the code from multiple branches to the master?
+
+
+---------------------------------------------------------
+24.	How to delete the branch?
+
+
+---------------------------------------------------------
+25.	How to recover the deleted branch? And what will be recovered?
+
+
+---------------------------------------------------------
+26.	What is conflict and its types? 
+
+
+---------------------------------------------------------
+27.	How to avoid conflicts?
+
+
+---------------------------------------------------------
+28.	How to track and fix the conflicts?
+
+
+---------------------------------------------------------
+29.	How to merge two branches?
+
+
+---------------------------------------------------------
+30.	How to check the graph of the commits?
+
+
+---------------------------------------------------------
+31.	What is broken commit and how to fix it?
+
+
+---------------------------------------------------------
+32.	What is tag in git?
+
+
+---------------------------------------------------------
+33.	What is show in git?
+
+
+---------------------------------------------------------
+34.	How to push the commits to the GitHub repository?
+
+
+---------------------------------------------------------
+35.	How to pull the files from GitHub repository?
+
+
+---------------------------------------------------------
+36.	How to check the files with logs before pulling from GitHub repository?
+
+
+---------------------------------------------------------
+37.	Difference between Git pull and Git fetch? 
+
+
+---------------------------------------------------------
+38.	Git stash?
+
+
+---------------------------------------------------------
+39.	Git stash apply?
+
+
+---------------------------------------------------------
+40.	git stash drop?
+
+
+---------------------------------------------------------
+41.	Difference between Git diff and Git Status? 
+
+
+---------------------------------------------------------
+42.	Difference between Git remote and Git clone? 
+
+
+---------------------------------------------------------
+43.	How to find the list of files which are changes in any commit?
+
+
+---------------------------------------------------------
+44.	What is function of git config?
+
+
+---------------------------------------------------------
+45.	Branching strategies?
+
+
+---------------------------------------------------------
+46.	Advantages of forking workflow?
+
+
+
+---------------------------------------------------------
+47.	How to check if a branch is already merge into the master?
+
+
+---------------------------------------------------------
+48.	How would you return a commit that has just been pushed and made open?
+
+
+
+---------------------------------------------------------
+49.	How to remove a file from git without removing it from your file system?
+
+
+---------------------------------------------------------
+50.	Explain the Gitflow workflow?
+
+
+---------------------------------------------------------
+51.	Difference between HEAD, working tree and index, in Git?
+
+
+
+---------------------------------------------------------
+52.	What is Git fork? What is the difference between fork, branch, and clone?
+
+
+---------------------------------------------------------
+53.	What is different ways you can refer to a commit?
+
+
+---------------------------------------------------------
+54.	Difference between rebasing and merge in Git?
+
+
+
+---------------------------------------------------------
+55.	Difference between reverting and resetting?
+
+
+
+---------------------------------------------------------
+56.	cherry-pick?
+
+
+
+---------------------------------------------------------
+57.	How do you squash the last N commits into a single commit?
+
+
+
+---------------------------------------------------------
+58.	What is Git bisect? How can you use it to determine the source of a (regression) bug?
+
+
+
+---------------------------------------------------------
+59.	How do you configure a Git repository to run code sanity checking tools right before making commits, and preventing them if the test fails?
+
+
+---------------------------------------------------------
+60.	What is reflog, how to use it and when to use it?
+
+
+
+---------------------------------------------------------
+
+
+
